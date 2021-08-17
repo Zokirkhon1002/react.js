@@ -24,8 +24,57 @@
   color: white;
 }
 
-.App-link {
+.App {
   color: #61dafb;
+  font-size: 30px;
+}
+.output {
+  font-size: 50px;
+  width: 80px;
+  width: 80px;
+  left: 47%;
+
+  position: absolute;
+  text-align: center;
+}
+body {
+  background-color: rgba(40, 40, 43, 0.445);
+}
+button {
+  margin-top: 200px;
+  width: 100%;
+  max-width: 350px;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(124, 218, 105);
+  border-radius: 16px 0px 16px 0px;
+  border-bottom: 3px solid rgb(106, 147, 235);
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+  cursor: pointer;
+}
+
+.secondary {
+  background-color: rgb(218, 105, 105);
+}
+.secondary:hover {
+  border-bottom: 3px solid rgb(218, 105, 105);
+}
+.danger {
+  background-color: rgb(218, 105, 105);
+}
+.danger:hover {
+  border-bottom: 3px solid rgb(218, 105, 105);
+}
+button:hover {
+  background-color: #61dafb;
+  color: white;
+  border-radius: 0px 16px 0px 16px;
+  border-bottom: 3px solid rgb(106, 235, 112);
 }
 
 @keyframes App-logo-spin {
