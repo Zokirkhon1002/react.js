@@ -8,18 +8,22 @@ class Amaliyot extends React.Component {
 
          componentDidMount() {
             console.log("Component did mount!!!!");
-            // localStorage.getItem();
+            const userCount = localStorage.getItem("timer");
+            if(userCount){
+                this.setState({count: +userCount});
+            }
          }
 
 
          componentDidUpdate() {
             console.log("Component did update!!!!");
-            // localStorage.setItem();
+            localStorage.setItem("timer", this.state.count);
         }
 
 
         componentWillUnmount() {
-            console.log("Component will Un Mount")
+            console.log("Component will unmount")
+            clearInterval(this.counterID);
         }
 
 
